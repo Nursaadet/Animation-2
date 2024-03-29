@@ -1,6 +1,8 @@
 const cursor = document.createElement("div");
 cursor.className = "cursor";
 
+const div = document.createElement('div')
+cursor.append(div)
 document.body.append(cursor);
 
 document.documentElement.addEventListener("mousemove", (e) => {
