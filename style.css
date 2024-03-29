@@ -1,9 +1,44 @@
 .cursor {
   position: fixed;
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
+  top: var(--top);
+  left: var(--left);
   border-radius: 50%;
-  background: rgba(255, 0, 0, 0.345);
+  background: rgba(0, 187, 255, 0.345);
   transform: translate(-50%, -50%);
   pointer-events: none;
+  transition: 200ms background-color, 200ms width, 200ms height;
 }
+
+
+.cursor.link {
+  width: 50px;
+  height: 50px;
+  background: rgba(134, 33, 134, 0.392);
+}
+
+.cursor.image {
+  width: 200px;
+  height: 200px;
+  background:  url(./img/rabbit.png) no-repeat center;
+  background-size: 100% ;
+}
+
+a:hover {
+  cursor: none;
+}
+
+img{
+    width:800px;
+    height: 800px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+img:hover {
+    cursor: none;
+  }
