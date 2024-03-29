@@ -3,7 +3,7 @@ body {
   align-items: center;
   justify-items: center;
   padding: 100px;
-  margin: 100px;
+  margin: 0px;
   flex-direction: column;
   background-color: rgba(27, 151, 27, 0.529);
 }
