@@ -8,6 +8,7 @@ document.body.append(cursor);
 document.documentElement.addEventListener("mousemove", (e) => {
   cursor.style.setProperty("--top", e.clientY + "px");
   cursor.style.setProperty("--left", e.clientX + "px");
+  cursor.className = `cursor ${e.target.dataset.cursor || ''}`
 
   switch (e.target.tagName) {
     case "A":
